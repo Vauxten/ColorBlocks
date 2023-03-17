@@ -39,11 +39,10 @@ public class ColorBlocks extends JavaPlugin {
                     }
                 }
             }
-
-            public void onDisable () {
-                getLogger().info("Disabled ColorBlocks");
-                Bukkit.getServer().dispatchCommand(Bukkit.getServer().getConsoleSender(), "save-all");
-            }
         };
+    }
+    public void onDisable () {
+        getLogger().info("Disabled ColorBlocks");
+        Bukkit.getServer().dispatchCommand(Bukkit.getServer().getConsoleSender(), "save-all");
     }
 }
