@@ -14,7 +14,6 @@ public class ColorBlocks extends JavaPlugin {
     public void onEnable() {
         getLogger().info("Enabled ColorBlocks");
         this.getCommand("colorblocks").setExecutor(new colorblocks());
-        this.getCommand("reload").setExecutor(new reload());
         getCommand("reload").setExecutor(this);
 
         new BukkitRunnable() {
