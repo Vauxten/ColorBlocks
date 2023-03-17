@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="ColorBlocks:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/ColorBlocks_jar</output-path>
+    <root id="archive" name="ColorBlocks.jar">
+      <element id="module-output" name="ColorBlocks" />
+      <element id="file-copy" path="$PROJECT_DIR$/pom.xml" />
+    </root>
+  </artifact>
+</component>

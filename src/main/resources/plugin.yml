@@ -1,0 +1,19 @@
+name: ColorBlocks
+version: '${project.version}'
+main: org.untitleda.colorblocks.ColorBlocks
+api-version: 1.19
+author: Vauxten
+website: not.released
+description: Main plugin for ColorBlocks.
+commands:
+  colorblocks:
+    description: Just a command on the server.
+    usage: /<command>
+    aliases: /cb
+  reload:
+    description: Not for you. (reloads the plugin).
+    usage: /<command>
+  newgame:
+    description: Creates a new game.
+    usage: /<command>
+    aliases: /ngame
