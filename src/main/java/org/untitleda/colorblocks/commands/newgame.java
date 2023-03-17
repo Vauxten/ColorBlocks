@@ -15,7 +15,7 @@ public class newgame implements CommandExecutor {
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
         if (sender instanceof Player) {
             Inventory inv = Bukkit.createInventory(null, 9, "New Game");
-            inv.addItem(new ItemStack(Material.GREEN_STAINED_GLASS_PANE), (ChatColor.GREEN + "a"));
+            inv.addItem(new ItemStack(Material.GREEN_STAINED_GLASS_PANE)); //make item
         }
         else {
             sender.sendMessage(ChatColor.DARK_RED + "You must be a player to execute this command.");
