@@ -8,14 +8,16 @@ import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 import org.bukkit.inventory.Inventory;
-import org.bukkit.inventory.ItemStack;
+import org.untitleda.colorblocks.ColorBlocks;
 
 public class newgame implements CommandExecutor {
     @Override
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
         if (sender instanceof Player) {
+            Player p = (Player) sender;
             Inventory inv = Bukkit.createInventory(null, 9, "New Game");
-            inv.addItem(new ItemStack(Material.GREEN_STAINED_GLASS_PANE)); //make item
+            inv.addItem(ColorBlocks.createGuiItem(Material.GREEN_STAINED_GLASS, ChatColor.GREEN + "New Game", ChatColor.GRAY + "Creates a new game."));
+            p.openInventory(inv);
         }
         else {
             sender.sendMessage(ChatColor.DARK_RED + "You must be a player to execute this command.");

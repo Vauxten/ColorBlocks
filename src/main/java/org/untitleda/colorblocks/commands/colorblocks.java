@@ -9,8 +9,7 @@ public class colorblocks implements CommandExecutor {
     // This method is called, when somebody uses our command
     @Override
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
-        sender.sendMessage(ChatColor.BLUE + "Co" + ChatColor.RED + "lor" + ChatColor.YELLOW, " block" + ChatColor.LIGHT_PURPLE + "s");
-        sender.sendMessage(ChatColor.WHITE + "Made by Vauxten.");
+        sender.sendMessage(ChatColor.GREEN + "You are currently playing on ColorBlocks, by Vauxten.");
         return true;
     }
 }
